@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | PureMint Skincare</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/puremint-logo.jpeg" alt="logo" width="150" height="100">
+        <div class="icon">
+            <input type="text" placeholder="Search Now">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="cart.html">Cart <span>&#128722</span>(<span id="cart-badge">0</span>)</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu-bar">
+            <span class="hamburger">☰</span>
+            <button class="theme-toggle-btn">🌓</button>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact </a>
+            <a href="checkout.html"> Checkout</a>
+        </div>
+    </nav>
+
+<section class="hero2">
+    <h1>About PureMint</h1>
+    <p><i>Natural Mint ~ Rice ~ Herbal Fragrance Skincare</i></p>
+</section>
+
+<main>
+    <h3>Our Story</h3>
+    <p>PureMint started with simple idea:<b>Skincare should be natural, simple and fresh.</b>
+    We believe skin loves plant‑based gentle care, we carefully blend cooling mint, nourishing rice water and traditional herbal extract to create soft fragrant skincare that suits sensitive, dry and oily skin.
+     Every product is handmade‑inspired, lightweight and fresh scented.</p>
+
+     <section>
+        <div class="cards1">
+            <div  class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To deliver clean, herbal, rice&mint‑based skincare at  affordable<br> prices for daily healthy skin.</p>
+            </div>
+            <div  class="vision">
+                    <h3>Our Vision</h3>
+                    <p>To become trusted natural fragrance skincare brand known for safe herbal‑rice skincare for every skin type.</p>
+            </div>
+        </div>
+
+        <div class="different">
+            <h2>Why We Are Different</h2>
+            <ul>
+                <li>100% Natural mint, rice & herbal ingredients</li>
+                <li>No Harsh Chemicals & no artificial perfume</li>
+                <li>Soft natural plant fragrance</li>
+                <li>Skin‑friendly for all ages&skin types</li>
+            </ul>
+        </div>
+
+        <div class="teams">
+           <h2>Our Creative Team</h2>
+           <div class="team-member">
+           <figure>
+            <img src="image/team.png" alt="founder" width="150">
+            <figcaption>
+                <i><b>Maya</b><br>Founder</i>
+            </figcaption>
+           </figure>
+           <figure>
+            <img src="image/team (2).png" alt="Product Researcher" width="150">
+            <figcaption>
+                <i><b>Lina</b><br>Product Researcher</i>
+            </figcaption>
+           </figure>
+           <figure>
+            <img src="image/team (3).png" alt="Expert" width="150">
+            <figcaption>
+                <i><b>Aliya</b><br>Quality Check Expert</i>
+            </figcaption>
+           </figure>
+           </div>
+        </div>
+     </section>
+ </main>
+
+ <quote>
+    <p><i>"Beauty grows naturally with mint and rice"</i></p>
+ </quote>
+
+<footer>
+    <div class="about">
+        <h4>About Us</h4>
+        <figure>
+            <img src="" alt="logo" width="100">
+        </figure>
+        <P>
+            Infused with cooling mint, nutrient‑rich rice and pure wild herbs,our skincare carries delicate natural fragrances‑‑clean,mild daily care without harmful additives.
+        </P>
+    </div>
+    <div class="links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="shop.html">Shop</a><br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="product.html">Product</a><br>
+    </div>
+    <div class="support">
+        <h4>Customer Support</h4>
+        <a href="">Track Order</a><br>
+        <a href="">Return Policy</a>
+        <a href="">FAQ's</a>
+        <a href="checkout.html">Payment Info</a>
+    </div>
+    <div class="contact">
+        <h4>Contact Information</h4>
+        <p><b>Address</b>: PureMint Ntarual Skincare Hub 12 Green Herbal Bovourland,Bloom town,Lahore,Punjab,Pakistan. </p>
+        <p><b>Phn No.</b>: +923017894567</p>
+        <p><b>E‑mail</b>: support@puremintskincare.com</p>
+       <p><i>&copy 2026 PureMint. All Rights Reserved.</i></p>
+    </div>
+</footer>
+
+<button id="backToTopBtn">↑</button>
+<script src="script.js"></script>
+<script>
+const headerSearchInput = document.getElementById("headerSearchInput");
+if(headerSearchInput){
+    headerSearchInput.addEventListener("keydown",function(e){
+        if(e.key === "Enter"){
+            const searchVal = this.value.trim();
+            if(searchVal){
+                window.location.href = "shop.html?search="+encodeURIComponent(searchVal);
+            }else{
+                window.location.href = "shop.html";
+            }
+        }
+    })
+}
+</script>
+</body>
+</html>

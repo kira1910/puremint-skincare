@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | PureMint Skincare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/puremint-logo.jpeg" alt="logo" width="150" height="100">
+        <div class="icon">
+            <input type="text" id="headerSearchInput" placeholder="Search Now">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="cart.html">Cart <span>&#128722</span>(<span id="cart-badge">0</span>)</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu-bar">
+            <span class="hamburger">☰</span>
+            <button class="theme-toggle-btn">🌓</button>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact </a>
+            <a href="checkout.html"> Checkout</a>
+        </div>
+    </nav>
+
+<section class="hero-check">
+    <h1>Checkout </h1>
+    <p>Complete your order for natural mint‑herb skincare</p>
+</section>
+<main>
+<section class="combine-checkout">
+    <div class="detail">
+    <h2> Biling & shipping Details</h2>
+    <form class="checkout-form">
+      <div class="input-2">
+      <input type="text" placeholder="Full Name"><br>
+      <input type="tel" placeholder="Phone Number"><br>
+      <input type="email" placeholder="E‑mail"><br><br>
+      <b><label>Shipping Address</label></b><br><br>
+      <input type="text" placeholder="City"><br>
+      <b><label>Postal Code</label></b>
+      <input type="number" placeholder="Postal Code"><br>
+      <input type="text" placeholder="Order Notes"><br>
+      </div>
+      <a href="cart.html"><button type="button">Back to Cart</button></a>
+      <button type="submit">Place Order</button>
+    </form>
+    </div>
+<div class="summary">
+    <h2>Order Summary</h2>
+    <!-- NEW CONTAINERS FOR SHOWING CART ON CHECKOUT -->
+    <div id="checkout-order-items"></div>
+    <h3>Subtotal: $<span id="checkout-subtotal">0.00</span></h3>
+    <p><a href="cart.html">Edit Cart</a></p>
+</div>
+</section>
+</main>
+
+<footer>
+    <div class="about">
+        <h4>About Us</h4>
+        <figure>
+            <img src="" alt="logo" width="100">
+        </figure>
+        <P>
+            Infused with cooling mint, nutrient‑rich rice and pure wild herbs,our skincare carries delicate natural fragrances‑‑clean,mild daily care without harmful additives.
+        </P>
+    </div>
+    <div class="links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="shop.html">Shop</a><br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="product.html">Product</a><br>
+    </div>
+    <div class="support">
+        <h4>Customer Support</h4>
+        <a href="">Track Order</a><br>
+        <a href="">Return Policy</a>
+        <a href="">FAQ's</a>
+        <a href="checkout.html">Payment Info</a>
+    </div>
+    <div class="contact">
+        <h4>Contact Information</h4>
+        <p><b>Address</b>: PureMint Ntarual Skincare Hub 12 Green Herbal Bovourland,Bloom town,Lahore,Punjab,Pakistan. </p>
+        <p><b>Phn No.</b>: +923017894567</p>
+        <p><b>E‑mail</b>: support@puremintskincare.com</p>
+       <p><i>&copy 2026 PureMint. All Rights Reserved.</i></p>
+    </div>
+</footer>
+
+<button id="backToTopBtn">↑</button>
+<script src="script.js"></script>
+
+<script>
+const headerSearchInput = document.getElementById("headerSearchInput");
+if(headerSearchInput){
+    headerSearchInput.addEventListener("keydown",function(e){
+        if(e.key === "Enter"){
+            const searchVal = this.value.trim();
+            if(searchVal){
+                window.location.href = "shop.html?search="+encodeURIComponent(searchVal);
+            }else{
+                window.location.href = "shop.html";
+            }
+        }
+    })
+}
+</script>
+</body>
+</html>
+

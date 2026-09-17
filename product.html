@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | PureMint Skincare</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/puremint-logo.jpeg" alt="logo" width="150" height="100">
+        <div class="icon">
+            <!-- HEADER SEARCH: press Enter jump shop page and pass keyword -->
+            <input type="text" id="headerSearchInput" placeholder="Search Now">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="cart.html">Cart <span>&#128722</span>(<span id="cart-badge">0</span>)</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu-bar">
+            <span class="hamburger">☰</span>
+            <button class="theme-toggle-btn">🌓</button>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact </a>
+            <a href="checkout.html"> Checkout</a>
+        </div>
+    </nav>
+
+<main>
+    <section id="prod-5">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Cooling Mint Rice Body Lotion
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/body lotion.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/lotion-1.png" alt="small" width="200">
+            <img src="image/lotion-2.png" alt="small" width="200">
+            <img src="image/lotion-3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Cooling Mint Rice Body Lotion<br></h2>
+            Sale:$17.99|   Original:<s>$23.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             Light body lotion, fresh mint cooling, rice softens skin , long‑lasting soft herbal aroma.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(5)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice milk, mint , lavendar herbs , coconut oil, natural fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-8">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Rose Herbal Rice Night Cream
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/night cream.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/rose1.png" alt="small"width="200">
+            <img src="image/rose2.png" alt="small" width="200">
+            <img src="image/rose3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>  Rose Herbal Rice Night Cream<br></h2>
+            Sale:$19.99|Original:<s>$26.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+            Night‑time repair cream, rice nourishes, rose herbs soothe, mint cools overnight.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(8)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice extract, rose petals, mint jojoba oil, natural rose scent.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-9">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mint Rice Fragrance Face Mist
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/face mist.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/body mist1.png" alt="small" width="200">
+            <img src="image/body mist2.png" alt="small" width="200">
+            <img src="image/body mist3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2> Mint Rice Fragrance Face Mist<br></h2>
+            Sale:$13.49|Original:<s>$17.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+             Quick refreshing face spray, mint cools,rice hydrates, light fresh herbals fragrance.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(9)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice water, mint , lemongrass herbs, purified water , plant scents.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-10">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Calming Herbal Rice Lip Butter
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/lip butter.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/lip butter1.png" alt="small" width="200">
+            <img src="image/lip butter2.png" alt="small" width="200">
+            <img src="image/lip butter3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Calming Herbal Rice Lip Butter<br></h2>
+            Sale:$9.99|Original:<s>$13.49</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+             Soft lip butter, rice oil heals chapped lips, mint fresh taste, gentle herbal scent.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(10)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice oil, mint , basil herbs,shea butter,natural fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-11">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Citrus Mint Rice Bath Cream
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/citrus bath cream.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/citrus1.png" alt="small" width="200">
+            <img src="image/citrius2.png" alt="small" width="200">
+            <img src="image/citrus3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2> Citrus Mint Rice Bath Cream<br></h2>
+            Sale:$18.49|Original:<s>$24.49</s><br>
+            <span>&#9733 &#9733 &#9733 &#9734 &#9734</span><br>
+             Smooth bath cream,citrus‑mint fresh , rice softens skin, bright herbal aroma.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(11)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice milk, mint , orange peel herbs, coconut oil, citrus plant scent.</td></tr>
+             </table>
+        </p>
+      </div>
+     </div>
+    </section>
+
+     <section id="prod-12">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+        Unscented Pure Rice Herbal Mask Pack
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/mask pack.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/mask pack1.png" alt="small" width="200">
+            <img src="image/mask pack2.png" alt="small" width="200">
+            <img src="image/mask pack3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>  Unscented Pure Rice Herbal Mask Pack<br></h2>
+            Sale:$21.49|Original:<s>$28.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9734 &#9734</span><br>
+            Fragrance‑free rice mask, herbs purify pores,mint refreshes, safe for super sensitive skin.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(12)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice powder, neem&mint herbs, aloevera, no artifical perfume.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-1">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mint Rice Hydrating Face Toner
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/face toner.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="" alt="small" width="200">
+            <img src="" alt="small" width="200">
+            <img src="" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mint Rice Hydrating Face Toner<br></h2>
+            Sale:$14.99|Original:<s>$19.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733  </span><br>
+             Cooling mint refreshes skin, rice extract hydrates, gentle herbal scent, soothes sensitive skin.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(1)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Fresh mint, rice water, wild herbal extracts, natural plant fragrance, purified water.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-2">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+        Herbal Rice Cleansing Cream
+      </div>
+<div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/cleasing cream.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/cleansing cream1.png" alt="small" width="200">
+            <img src="image/cleansing cream2.png" alt="small" width="200">
+            <img src="image/cleasing cream.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2> Herbal Rice Cleansing Cream<br></h2>
+            Sale:$16.99 Original:<s>$22.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733 </span><br>
+             Soft rice‑based cleanser remove dirt, herb calm irritation, mild natural smell, non‑sticky.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(2)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice extract, neem herbs, mint, plant fragrance, natural moisturizer.</td></tr>
+             </table>
+        </p>
+      </div>
+</div>
+    </section>
+
+     <section id="prod-3">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Fragranced Mint Rice Day Moisturizer
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/daymosituzer.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/day1.png" alt="small" width="200">
+            <img src="image/day2.png" alt="small" width="200">
+            <img src="image/day3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Fragranced Mint Rice Day Moisturizer<br></h2>
+            Sale:$18.99 Original:<s>$24.99</s><br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             Light daily moisturizer, mint cools skin, rice nourishes, soft herbal scent for all‑day glow.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(3)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice bran, mint leaf extract, rose herbs, natural plant perfume, shea butter.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-4">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Natural Herbal Rice Under Eye Balm
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/eye balm.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/eye mist 1.png" alt="small" width="200">
+            <img src="image/eye mist 1.png" alt="small" width="200">
+            <img src="image/eye mist 3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2> Natural Herbal Rice Under Eye Balm<br></h2>
+            Sale:$12.99 Original:<s>$16.99</s><br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+             Soothes tired eyes, rice reduces dark circles, mint relaxes eyes, subtle herbal fragrance.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(4)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice oil, mint, chamomile herbs, almond oil, natural scents.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-13">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mint Rice Herbal Face Wash
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/face wash.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="" alt="small" width="200">
+            <img src="" alt="small" width="200">
+            <img src="" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mint Rice Herbal Face Wash<br></h2>
+           Price:$18.99 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             Foam‑free gentle face wash, mint deep cleans, rice balances oil, soft herbal smell.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(13)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice water, mint, tulsi herbs, aloe vera, natural plant fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-14">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Jasmine Herbal Rice Body Mist
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/jasmine mist.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/body mist1.png" alt="small" width="200">
+            <img src="image/body mist2.png" alt="small" width="200">
+            <img src="image/body mist3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Jasmine Herbal Rice Body Mist<br></h2>
+           Price:$19.49 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+            Light body spray, jasmine herbal scent, rice hydrates skin, mint keeps fresh.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(14)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice water, mint, jasmine herbs, purified water, jasmine plant scent.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-15">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mint Rice Exfoliating Rice Powder
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/rice powder.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/rice powder 1.png" alt="small" width="200">
+            <img src="image/rice powder 2.png" alt="small" width="200">
+            <img src="image/rice powder3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mint Rice Exfoliating Rice Powder<br></h2>
+           Price:$15.99 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+            Dry rice exfoliant powder, mint cleans pores, herbs brighten dull skins.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(15)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice powder, mint , sandalwood herbs, tumeric, natural scent.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-16">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+     SandalWood Herbal Rice Face Pack
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/face pack.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/sandal1.png" alt="small" width="200">
+            <img src="image/sandal2.png" alt="small" width="200">
+            <img src="image/sandal3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>SandalWood Herbal Rice Face Pack<br></h2>
+           Price:$29.99 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+            Brighting face pack, sandalwood herbs calm skin, rice nourishes, warm soft scent.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(16)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice powder, sandalwood, mint, rose herbs, plant fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-17">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mint Rice Herbal Hand Balm
+      </div>
+      <div class="combine">
+       <div class="left">
+        <figure class="big">
+            <img src="image/hand balm.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/hand balm 1.png" alt="small" width="200">
+            <img src="image/hand balm2.png" alt="small" width="200">
+            <img src="image/hand balm3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mint Rice Herbal Hand Balm<br></h2>
+           Price:$14.49 <br>
+           <span>&#9733 &#9733 &#9733 &#9734 &#9734</span><br>
+             Nourishing hand balm, rice softens rough hands, mint fresh, light herbal aroma.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(17)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice oil, mint , calendula herbs, shea butter, natural scents.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-18">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Rosemary Herbal Rice Hair Serum
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/hair serum.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/rosemary1.png" alt="small" width="200">
+            <img src="image/rosemary2.png" alt="small" width="200">
+            <img src="image/rosemary3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Rosemary Herbal Rice Hair Serum<br></h2>
+           Price:$28.49 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+             Hair‑care serum, rice strengthens hair, rosemary herbs reduce hair fall, mint fresh.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(18)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice water, rosemary mint, olive oil, herbal.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-19">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Mint Rice Cooling Eye Mist
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/eye balm.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/eye mist 1.png" alt="small" width="200">
+            <img src="image/eye mist2.png" alt="small" width="200">
+            <img src="image/eye mist 3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mint Rice Cooling Eye Mist<br></h2>
+           Price:$16.49 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+             Refreshing eye spray , mint relaxes tired eyes, rice hydrates under‑eyes skin.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(19)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice water, mint, chamomile herbs, purified water, soft plant scent.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-20">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Vanilla Herbal Rice Body Butter
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/body butter.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/vanilla1.png" alt="small" width="200">
+            <img src="image/vanilla2.png" alt="small" width="200">
+            <img src="image/vanilla3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Vanilla Herbal Rice Body Butter<br></h2>
+           Price:$26.99 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             Thick creamy body butter, rice softens dry skin, warm vanilla‑herbal sweet scent.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(20)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice bran oil, mint, vanilla herbs, shea butter, natural vanilla fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-6">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+      Lavender Herbal Rice Face Serum
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/lavendar serum.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/lavender-1.png" alt="small" width="200">
+            <img src="image/lavender-2.png" alt="small" width="200">
+            <img src="image/lavender-3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Lavender Herbal Rice Face Serum<br></h2>
+           Price:$20.99 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+            Rice brightens skin, lavender ,mint, rosemary herbs clam stress, mind refreshes , soft relaxing scent.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(6)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice serum, mint rosemary herbs, lavender, plant scents.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+
+     <section id="prod-7">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>/
+       <a href="shop.html">Shop</a>/
+       Mild Scent Mint Rice Scrub
+      
+      </div>
+      <div class="combine">
+      <div class="left">
+        <figure class="big">
+            <img src="image/rice scrub.png" alt="big" width="700" height="400">
+        </figure>
+        <figure class="small">
+            <img src="image/scrub1.png" alt="small" width="200">
+            <img src="image/scrub2.png" alt="small" width="200">
+            <img src="image/scrub3.png" alt="small" width="200">
+        </figure>
+      </div>
+      <div class="right">
+        <p>
+            <h2>Mild Scent Mint Rice Scrub<br></h2>
+           Price:$15.49 <br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             Gentle rice exfoliator , mint deep cleans, herbs remove dead skin, soft natural smell.<br>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" placeholder="1">
+             <button onclick="addToCart(7)">Add to Cart</button>
+             <table>
+                <tr><th>Ingredients</th></tr>
+                <tr><td>Rice grains, mint, tumeric herbs,almond oil, plant fragrance.</td></tr>
+             </table>
+        </p>
+      </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+    <div class="about">
+        <h4>About Us</h4>
+        <figure>
+            <img src="" alt="logo" width="100">
+        </figure>
+        <P>
+            Infused with cooling mint, nutrient‑rich rice and pure wild herbs,our skincare carries delicate natural fragrances‑‑clean,mild daily care without harmful additives.
+        </P>
+    </div>
+    <div class="links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="shop.html">Shop</a><br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="product.html">Product</a><br>
+    </div>
+    <div class="support">
+        <h4>Customer Support</h4>
+        <a href="">Track Order</a><br>
+        <a href="">Return Policy</a>
+        <a href="">FAQ's</a>
+        <a href="checkout.html">Payment Info</a>
+    </div>
+    <div class="contact">
+        <h4>Contact Information</h4>
+        <p><b>Address</b>: PureMint Ntarual Skincare Hub 12 Green Herbal Bovourland,Bloom town,Lahore,Punjab,Pakistan. </p>
+        <p><b>Phn No.</b>: +923017894567</p>
+        <p><b>E‑mail</b>: support@puremintskincare.com</p>
+       <p><i>&copy 2026 PureMint. All Rights Reserved.</i></p>
+    </div>
+</footer>
+
+<button id="backToTopBtn">↑</button>
+<script src="script.js"></script>
+
+<!-- Header search same as index / shop page -->
+<script>
+const headerSearchInput = document.getElementById("headerSearchInput");
+if(headerSearchInput){
+    headerSearchInput.addEventListener("keydown",function(e){
+        if(e.key === "Enter"){
+            const searchVal = this.value.trim();
+            if(searchVal){
+                window.location.href = "shop.html?search="+encodeURIComponent(searchVal);
+            }else{
+                window.location.href = "shop.html";
+            }
+        }
+    })
+}
+</script>
+</body>
+</html>

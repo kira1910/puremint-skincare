@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureMint Skincare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="image/puremint-logo.jpeg" alt="logo" width="150" height="100">
+        <div class="icon">
+            <!-- HEADER SEARCH: press enter to go shop page and search -->
+            <input type="text" id="headerSearchInput" placeholder="Search Now">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="cart.html">Cart <span>&#128722</span>(<span id="cart-badge">0</span>)</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu-bar">
+            <span class="hamburger">☰</span>
+            <button class="theme-toggle-btn">🌓</button>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact </a>
+            <a href="checkout.html"> Checkout</a>
+        </div>
+    </nav>
+
+<section class="hero-banner">
+   <div>
+    <h1>Pure Mint,<br>Rice & Herbal<br>Fragrance</h1>
+    <p>Cooling mint, nourishing rice extract  and gentle <br>natural herbs blended into softly scented daily skincare.</p>
+    <button onclick="window.location.href='shop.html'"> Shop Now</button>
+   </div>
+    <figure>
+        <img src="images/banner1.jpeg" alt="banner" width="600" height="450">
+    </figure>
+</section>
+
+<main>
+         <section class="categories">
+    <h1>Explore Products By Category</h1>
+    <div class="cards">
+        <figure>
+        <a href="shop.html?cat=face">
+            <img src="images/facecare.jpeg" alt="cleanizer" width="150">
+            <figcaption>
+                <P>Face Care</P>
+            </figcaption>
+        </a>
+    </figure>
+     <figure>
+        <a href="shop.html?cat=face">
+            <img src="images/mist.jpeg" alt="cleanizer" width="150">
+            <figcaption>
+                <P>Mint Toner</P>
+            </figcaption>
+        </a>
+    </figure>
+    <figure>
+        <a href="shop.html?cat=face">
+         <img src="images/facecare.jpeg" alt="cleanizer" width="150">
+        <figcaption>
+            <p>Rice Cleansers</p>
+        </figcaption>
+        </a>
+    </figure>
+     <figure>
+        <a href="shop.html?cat=body">
+        <img src="images/lotion.jpeg" alt="cleanizer" width="150">
+        <figcaption>
+            <P>Body Lotion</P>
+        </figcaption>
+        </a>
+    </figure>
+    <figure>
+        <a href="shop.html?cat=body">
+        <img src="images/cream.jpeg" alt="cleanizer" width="150">
+        <figcaption>
+            <P>Scented Creams</P>
+        </figcaption>
+        </a>
+    </figure>
+    <figure>
+        <a href="shop.html?cat=hair">
+        <img src="images/serum.jpeg" alt="cleanizer" width="150">
+        <figcaption>
+            <P>Herbal Serums</P>
+        </figcaption>
+        </a>
+    </figure>
+</div>
+</section>
+
+        
+
+    <section class="productsection">
+        <h1>Our Best Mint & Rice Herbal Picks</h1>
+        <div class="products">
+       <figure>
+        <a href="product.html#prod-1">
+        <img src="images/mint rice hydrating toner.jfif" alt="products" width="200">
+        <figcaption>
+            Mint Rice Hydrating <br>Face Toner<br>
+            Sale:$14.99|Original:<s>$19.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733  </span>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(1)">Add to Cart</button>
+       </figure>
+        <figure>
+        <a href="product.html#prod-2">
+        <img src="images/herbal rice cleanser.jfif" alt="products" width="200">
+        <figcaption>
+            Herbal Rice Cleansing <br>Cream<br>
+            Sale:$16.99 |Original:<s>$22.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733 </span>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(2)">Add to Cart</button>
+       </figure>
+        <figure>
+        <a href="product.html#prod-3">
+        <img src="images/day moisturizer.jfif" alt="products" width="200">
+        <figcaption>
+           Fragranced Mint Rice<br> Day Moisturizer<br>
+           Sale:$18.99 |Original:<s>$24.99</s><br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(3)">Add to Cart</button>
+       </figure>
+        <figure>
+        <a href="product.html#prod-4">
+        <img src="images/eye gel.jfif" alt="products" width="200">
+        <figcaption>
+            Natural Herbal Rice <br>Under Eye Balm<br>
+            Sale:$12.99 |Original:<s>$16.99</s><br>
+           <span>&#9733 &#9733 &#9733 &#9733 &#9734</span>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(4)">Add to Cart</button>
+       </figure>
+        </div>
+    </section>
+
+    <section class="offer">
+        <h1>Special Offer</h1>
+        <div class="promotional-banner">
+           <img src="images/promotional banner.jfif" alt="promotional banner" width="1000" height="600">
+        </div>
+      <div class="card1">
+        <figure>
+        <a href="product.html#prod-5">
+        <img src="images/body lotion.jrif.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Cooling Mint Rice Body Lotion<br>
+            Sale:$17.99|Original:<s>$23.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+             </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(5)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-6">
+        <img src="images/herbal serum.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Lavendar Herbal Rice Face Serum<br>
+            Sale:$20.99|Original:<s>$27.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(6)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-7">
+        <img src="images/scrub salt.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Mild Scent Mint Rice Scrub<br>
+            Sale:$15.49|Original:<s>$20.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9733</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(7)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-8">
+        <img src="images/night cream.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Rose Herbal Rice Night Cream<br>
+            Sale:$19.99|Original:<s>$26.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(8)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-9">
+        <img src="images/facial mist.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Mint Rice Fragrance Face Mist<br>
+            Sale:$13.49|Original:<s>$17.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(9)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-10">
+        <img src="images/balm.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Calming Herbal Rice Lip Butter<br>
+            Sale:$9.99|Original:<s>$13.49</s><br>
+            <span>&#9733 &#9733 &#9733 &#9733 &#9734</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(10)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-11">
+        <img src="images/body wash.jfif" alt="offers"width="250" height="200">
+        <figcaption>
+            <p>
+            Citrus Mint Rice Bath Cream<br>
+            Sale:$18.49|Original:<s>$24.49</s><br>
+            <span>&#9733 &#9733 &#9733 &#9734 &#9734</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(11)">Add to Cart</button>
+        </figure>
+        <figure>
+        <a href="product.html#prod-12">
+        <img src="images/face mask.jfif" alt="offers" width="250" height="200">
+        <figcaption>
+            <p>
+            Unscented Pure Rice Herbal Mask Pack<br>
+            Sale:$21.49|Original:<s>$28.99</s><br>
+            <span>&#9733 &#9733 &#9733 &#9734 &#9734</span><br>
+            </p>
+        </figcaption>
+        </a>
+        <button onclick="addToCart(12)">Add to Cart</button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="y-choose">
+        <h2>Why Our Mint RIce Herbal Skincare Stands Out </h2>
+        <div class="card2">
+            <figure>
+                <img src="images/y choose1.png" alt="images" width="700" height="500">
+            </figure>
+             <figure>
+                <img src="images/y choose 2.png" alt="images" width="300" height="400">
+            </figure>
+             <figure>
+                <img src="images/y choose3.png" alt="images" width="300" height="400">
+            </figure>
+             <figure>
+                <img src="images/y choose4.png" alt="images" width="300" height="400">
+            </figure>
+        </div>
+    </section>
+
+    <section class="customers">
+        <h1>Customer Love For Our Natural Fragrance Products</h1>
+           <figure>
+                <img src="image/customer.png" alt="customers" width="150">
+                <figcaption>
+                 <div class="id">
+                    Zara <br>
+                   <span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+                 </div>
+                 <div class="review">
+                <p><i>"Daily mint rice toner is amazing. Natural fragrance is calming and perfect for my sensitive skin."</i></p>
+            </div>
+            </figcaption>
+        </figure>
+         <figure>
+                <img src="image/customer (2).png" alt="customers" width="150">
+                <figcaption>
+                 <div class="id">
+                    Fariha <br>
+                   <span>&#9733 &#9733 &#9733 &#9733 &#9733</span>
+                 </div>
+                 <div class="review">
+                <p><i>"All herbal ingredients, gentle smell, affordable price. My go‑to daily skincare now!."</i></p>
+            </div>
+            </figcaption>
+        </figure>
+         <figure>
+                <img src="image/customer (3).png" alt="customers" width="150">
+                <figcaption>
+                 <div class="id">
+                    Ayesha <br>
+                   <span>&#9733 &#9733 &#9733 &#9733 &#9734</span>
+                 </div>
+                 <div class="review">
+                <p><i>"I love the soft mint‑herbal scent! The rice extract makes my skin so soft , no harsh chemicals at all."</i></p>
+            </div>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="newsletter">
+        <h1>Join Our PureMint Newsletter</h1>
+        <p><i>Get update on new mint‑rice herbal fragrant skincare,exclusive discounts &skincare tips</i></p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your e‑mail address">
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+</main>
+
+
+<footer>
+        <h4>About Us</h4>
+        <figure>
+            <img src="" alt="logo" width="100">
+        </figure>
+        <P>
+            Infused with cooling mint, nutrient‑rich rice and pure wild herbs,our skincare carries delicate natural fragrances‑‑clean,mild daily care without harmful additives.
+        </P><br>
+    <div class="links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="shop.html">Shop</a><br>
+        <a href="about.html">About</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="product.html">Product</a><br>
+    </div>
+    <div class="support">
+        <h4>Customer Support</h4>
+        <a href="">Track Order</a><br>
+        <a href="">Return Policy</a><br>
+        <a href="">FAQ's</a><br>
+        <a href="checkout.html">Payment Info</a><br>
+    </div>
+    <div class="contact">
+        <h4>Contact Information</h4>
+        <p><b>Address</b>: PureMint Ntarual Skincare Hub 12<br> Green Herbal Bovourland,Bloom town,Lahore,Punjab,Pakistan. </p>
+        <p><b>Phn No.</b>: +923017894567</p>
+        <p><b>E‑mail</b>: support@puremintskincare.com</p>
+    </div>
+</footer>
+
+
+<button id="backToTopBtn">↑</button>
+<script src="script.js"></script>
+
+<script>
+// HEADER SEARCH: press enter jump shop page and pass search text
+const headerSearchInput = document.getElementById("headerSearchInput");
+if(headerSearchInput){
+    headerSearchInput.addEventListener("keydown",function(e){
+        if(e.key === "Enter"){
+            const searchVal = this.value.trim();
+            if(searchVal){
+                window.location.href = "shop.html?search="+encodeURIComponent(searchVal);
+            }else{
+                window.location.href = "shop.html";
+            }
+        }
+    })
+}
+</script>
+
+
+
+</body>
+</html>
